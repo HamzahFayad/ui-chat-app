@@ -1,0 +1,40 @@
+/*reset*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+//no double scrollbars
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "Rubik";
+  font-size: 16px;
+}
+html,
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  /*overflow-x: hidden;*/
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
