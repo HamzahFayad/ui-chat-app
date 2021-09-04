@@ -2,6 +2,17 @@
 @import "./base.scss";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
+.gradient--form {
+  position: absolute;
+  top: -28%;
+  left: -4%;
+  z-index: -99;
+  background: linear-gradient(to bottom, $gradient1, $gradient2);
+  border-radius: 250px;
+  width: 425px;
+  height: 900px;
+  //transform: rotate(90deg);
+}
 main {
   display: flex;
   flex-flow: row nowrap;
@@ -9,9 +20,9 @@ main {
   .ui-phone {
     .case {
       width: 300px;
-      height: 550px;
+      height: 525px;
       border-radius: 30px;
-      background: rgb(255, 255, 255);
+      background: rgb(146, 144, 144);
     }
   }
   .descr,
@@ -24,11 +35,16 @@ main {
     }
     h2 {
       font-size: 1rem;
+      line-height: 28px;
     }
   }
 }
 
-@media only screen and(max-width: 675px) {
+@media only screen and(max-width: 1024px) {
+  .gradient--form {
+    top: -65%;
+    left: -40%;
+  }
   main {
     flex-flow: column wrap;
     .descr,

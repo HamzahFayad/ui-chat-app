@@ -99,6 +99,17 @@ h2 {
   font-weight: 400;
 }
 
+.gradient--form {
+  position: absolute;
+  top: -28%;
+  left: -4%;
+  z-index: -99;
+  background: linear-gradient(to bottom, #e942ff, #8838ff);
+  border-radius: 250px;
+  width: 425px;
+  height: 900px;
+}
+
 main {
   display: flex;
   flex-flow: row nowrap;
@@ -106,9 +117,9 @@ main {
 }
 main .ui-phone .case {
   width: 300px;
-  height: 550px;
+  height: 525px;
   border-radius: 30px;
-  background: white;
+  background: #929090;
 }
 main .descr,
 main .ui-phone {
@@ -123,9 +134,15 @@ main .ui-phone h1 {
 main .descr h2,
 main .ui-phone h2 {
   font-size: 1rem;
+  line-height: 28px;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 1024px) {
+  .gradient--form {
+    top: -65%;
+    left: -40%;
+  }
+
   main {
     flex-flow: column wrap;
   }
