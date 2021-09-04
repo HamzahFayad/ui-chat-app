@@ -10,3 +10,5 @@ Your users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - **Bonus**: See the chat interface animate on the initial load
+
+Icons by Font Awesome | https://fontawesome.com/license
