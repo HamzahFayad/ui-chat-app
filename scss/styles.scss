@@ -1,3 +1,44 @@
 @import "./reset.scss";
 @import "./base.scss";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .ui-phone {
+    .case {
+      width: 300px;
+      height: 550px;
+      border-radius: 30px;
+      background: rgb(255, 255, 255);
+    }
+  }
+  .descr,
+  .ui-phone {
+    align-self: center;
+    max-width: 600px;
+    margin: 0 4%;
+    h1 {
+      padding: 10px 0;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and(max-width: 675px) {
+  main {
+    flex-flow: column wrap;
+    .descr,
+    .ui-phone {
+      margin: 4% 0;
+      padding: 0 30px;
+      h2,
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
