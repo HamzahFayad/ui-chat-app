@@ -135,7 +135,7 @@ main .ui-phone .case--top {
 }
 main .ui-phone .case .chat__head {
   width: 280px;
-  height: 80px;
+  height: 100px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 4px;
@@ -143,8 +143,30 @@ main .ui-phone .case .chat__head {
   background: linear-gradient(to left, #e942ff, #8838ff);
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 12%);
+  transform: translate(-50%, 10%);
   z-index: 1;
+}
+main .ui-phone .case .chat__head img {
+  position: absolute;
+  transform: translate(65%, 100%);
+  max-width: 40px;
+  border-radius: 50%;
+}
+main .ui-phone .case .chat__head h2 {
+  top: 40%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+main .ui-phone .case .chat__head p {
+  top: 65%;
+  font-size: 0.7rem;
+  color: #f1dbff;
+}
+main .ui-phone .case .chat__head h2,
+main .ui-phone .case .chat__head p {
+  position: absolute;
+  left: 28%;
 }
 main .ui-phone .case .screen--outside {
   position: absolute;
