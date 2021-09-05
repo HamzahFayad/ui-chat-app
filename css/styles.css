@@ -210,6 +210,7 @@ main .ui-phone .case .screen--outside .text__part2 .dog__photos {
 }
 main .ui-phone .case .screen--outside .text__part2 .dog__photos img {
   max-width: 54px;
+  max-height: 54px;
   border-radius: 5px;
   margin: 0 2%;
 }
