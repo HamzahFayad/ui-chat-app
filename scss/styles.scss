@@ -21,10 +21,10 @@ main {
     .case {
       position: relative;
       width: 300px;
-      height: 525px;
+      height: 550px;
       border-radius: 30px;
       background: rgb(255, 255, 255);
-      box-shadow: 2px 8px 12px hsl(0, 0%, 78%);
+      box-shadow: 2px 2px 12px hsla(0, 0%, 65%, 0.671);
       &--top {
         width: 180px;
         height: 45px;
@@ -48,6 +48,7 @@ main {
         transform: translate(-50%, 10%);
         z-index: 1;
         padding: 0 20px;
+        box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.705);
         .arrow,
         .menu {
           max-width: 10px;
@@ -55,26 +56,26 @@ main {
           fill: white;
         }
         .arrow {
-          transform: rotate(180deg) translate(50%, -320%);
+          transform: rotate(180deg) translate(50%, -360%);
         }
         .menu {
           max-width: 6px;
-          transform: translate(235px, 320%);
+          transform: translate(235px, 360%);
         }
         .profile {
           position: absolute;
-          transform: translate(50%, 100%);
+          transform: translate(50%, 120%);
           max-width: 40px;
           border-radius: 50%;
         }
         h2 {
-          top: 40%;
+          top: 45%;
           font-size: 0.8rem;
           font-weight: 500;
           color: #fff;
         }
         p {
-          top: 65%;
+          top: 70%;
           font-size: 0.65rem;
           color: lighten($text-color1, 12%);
         }
@@ -85,14 +86,34 @@ main {
         }
       }
       .screen--outside {
-        position: absolute;
+        position: relative; //absolute?
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 280px;
-        height: 505px;
+        height: 525px;
         border-radius: 30px;
         background: hsl(270, 20%, 96%);
+        .text__part1 {
+          position: absolute;
+          top: 19%;
+          left: 4%;
+          .bubble1 {
+            max-width: 150px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 2px;
+            padding: 6px;
+            background: hsla(276, 72%, 83%, 0.555);
+            margin: 6% 0;
+            z-index: 12;
+            p {
+              font-size: 12px;
+              color: $text-color2;
+            }
+          }
+        }
       }
     }
   }

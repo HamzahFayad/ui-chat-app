@@ -118,10 +118,10 @@ main {
 main .ui-phone .case {
   position: relative;
   width: 300px;
-  height: 525px;
+  height: 550px;
   border-radius: 30px;
   background: white;
-  box-shadow: 2px 8px 12px #c7c7c7;
+  box-shadow: 2px 2px 12px rgba(166, 166, 166, 0.671);
 }
 main .ui-phone .case--top {
   width: 180px;
@@ -146,6 +146,7 @@ main .ui-phone .case .chat__head {
   transform: translate(-50%, 10%);
   z-index: 1;
   padding: 0 20px;
+  box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.705);
 }
 main .ui-phone .case .chat__head .arrow,
 main .ui-phone .case .chat__head .menu {
@@ -154,26 +155,26 @@ main .ui-phone .case .chat__head .menu {
   fill: white;
 }
 main .ui-phone .case .chat__head .arrow {
-  transform: rotate(180deg) translate(50%, -320%);
+  transform: rotate(180deg) translate(50%, -360%);
 }
 main .ui-phone .case .chat__head .menu {
   max-width: 6px;
-  transform: translate(235px, 320%);
+  transform: translate(235px, 360%);
 }
 main .ui-phone .case .chat__head .profile {
   position: absolute;
-  transform: translate(50%, 100%);
+  transform: translate(50%, 120%);
   max-width: 40px;
   border-radius: 50%;
 }
 main .ui-phone .case .chat__head h2 {
-  top: 40%;
+  top: 45%;
   font-size: 0.8rem;
   font-weight: 500;
   color: #fff;
 }
 main .ui-phone .case .chat__head p {
-  top: 65%;
+  top: 70%;
   font-size: 0.65rem;
   color: #f1dbff;
 }
@@ -183,14 +184,34 @@ main .ui-phone .case .chat__head p {
   left: 32%;
 }
 main .ui-phone .case .screen--outside {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 280px;
-  height: 505px;
+  height: 525px;
   border-radius: 30px;
   background: #f5f3f7;
+}
+main .ui-phone .case .screen--outside .text__part1 {
+  position: absolute;
+  top: 19%;
+  left: 4%;
+}
+main .ui-phone .case .screen--outside .text__part1 .bubble1 {
+  max-width: 150px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 2px;
+  padding: 6px;
+  background: rgba(218, 180, 243, 0.555);
+  margin: 6% 0;
+  z-index: 12;
+}
+main .ui-phone .case .screen--outside .text__part1 .bubble1 p {
+  font-size: 12px;
+  color: #9241c8;
 }
 main .descr,
 main .ui-phone {
