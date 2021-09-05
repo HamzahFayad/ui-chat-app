@@ -118,7 +118,7 @@ main {
 main .ui-phone .case {
   position: relative;
   width: 300px;
-  height: 550px;
+  height: 600px;
   border-radius: 30px;
   background: white;
   box-shadow: 2px 2px 12px rgba(166, 166, 166, 0.671);
@@ -189,29 +189,79 @@ main .ui-phone .case .screen--outside {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 280px;
-  height: 525px;
+  height: 575px;
   border-radius: 30px;
   background: #f5f3f7;
 }
 main .ui-phone .case .screen--outside .text__part1 {
   position: absolute;
-  top: 19%;
+  top: 18%;
   left: 4%;
 }
-main .ui-phone .case .screen--outside .text__part1 .bubble1 {
-  max-width: 150px;
+main .ui-phone .case .screen--outside .text__part2 {
+  position: absolute;
+  top: 41.5%;
+  right: 6%;
+}
+main .ui-phone .case .screen--outside .text__part2 .dog__photos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+main .ui-phone .case .screen--outside .text__part2 .dog__photos img {
+  max-width: 54px;
+  border-radius: 5px;
+  margin: 0 2%;
+}
+main .ui-phone .case .screen--outside .text__part2 .bubble2 {
+  max-width: 180px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 8px;
   padding: 6px;
-  background: rgba(218, 180, 243, 0.555);
+  background: white;
   margin: 6% 0;
   z-index: 12;
 }
-main .ui-phone .case .screen--outside .text__part1 .bubble1 p {
+main .ui-phone .case .screen--outside .text__part2 .bubble2 p {
   font-size: 12px;
-  color: #9241c8;
+  color: #5d6469;
+  line-height: 16px;
+}
+main .ui-phone .case .screen--outside .text__part3 {
+  position: absolute;
+  top: 69%;
+  left: 4%;
+}
+main .ui-phone .case .screen--outside .type__msg {
+  background: #fff;
+  padding: 14px;
+  border-radius: 18px;
+  position: relative;
+  top: 90%;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+main .ui-phone .case .screen--outside .type__msg p {
+  font-size: 12px;
+  color: #a39daa;
+}
+main .ui-phone .case .screen--outside .type__msg .send__msg {
+  position: absolute;
+  right: 2%;
+  top: 12%;
+  border-radius: 50%;
+  background: #3e2753;
+  width: 33px;
+  height: 33px;
+}
+main .ui-phone .case .screen--outside .type__msg .send__msg svg {
+  max-width: 14px;
+  position: absolute;
+  top: 16%;
+  right: 26%;
 }
 main .descr,
 main .ui-phone {
@@ -237,6 +287,23 @@ footer {
   font-size: 12px;
   vertical-align: middle;
   width: 100%;
+}
+
+.bubble1 {
+  max-width: 180px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 2px;
+  padding: 6px;
+  background: rgba(230, 206, 248, 0.555);
+  margin: 6% 0;
+  z-index: 12;
+}
+.bubble1 p {
+  font-size: 12px;
+  color: #9241c8;
+  line-height: 16px;
 }
 
 @media only screen and (max-width: 1024px) {
