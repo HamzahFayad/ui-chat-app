@@ -47,27 +47,41 @@ main {
         left: 50%;
         transform: translate(-50%, 10%);
         z-index: 1;
-        img {
+        padding: 0 20px;
+        .arrow,
+        .menu {
+          max-width: 10px;
           position: absolute;
-          transform: translate(65%, 100%);
+          fill: white;
+        }
+        .arrow {
+          transform: rotate(180deg) translate(50%, -320%);
+        }
+        .menu {
+          max-width: 6px;
+          transform: translate(235px, 320%);
+        }
+        .profile {
+          position: absolute;
+          transform: translate(50%, 100%);
           max-width: 40px;
           border-radius: 50%;
         }
         h2 {
           top: 40%;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           font-weight: 500;
           color: #fff;
         }
         p {
           top: 65%;
-          font-size: 0.7rem;
+          font-size: 0.65rem;
           color: lighten($text-color1, 12%);
         }
         h2,
         p {
           position: absolute;
-          left: 28%;
+          left: 32%;
         }
       }
       .screen--outside {
